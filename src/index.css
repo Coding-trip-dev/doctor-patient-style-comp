@@ -108,10 +108,26 @@ src: url("./assets/fonts/Gilroy-Regular.woff");
     background-image: url('./assets/images icons/1x/Component\ 2\ –\ 1.png') !important;
 }
 
+
+@media(min-width: 550px){
+  .spectabs > .react-tabs > .react-tabs__tab-list > .react-tabs__tab--selected{
+
+    padding: 10px 20px !important;
+}
+#react-tabs-18 {
+    padding: 8px 20px;
+    border: none !important;
+}
+}
+
 @media(max-width: 500px){
   .mobimgset{
     width: 100% !important;
   }
+  #react-tabs-20{
+  padding: 8px 15px !important;
+}
+
 }
 
 
@@ -139,4 +155,35 @@ body{
 
 .react-tabs__tab-list{
   border-bottom: none !important;
+}
+
+.spectabs > .react-tabs > .react-tabs__tab-list > .react-tabs__tab--selected{
+  background: #D0FFF6 !important;
+    color: #707070 !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 15px;
+    font-weight: bold !important;
+    z-index: 9999;
+   
+}
+
+.spectabs > .react-tabs > .react-tabs__tab-list{
+  /* position: relative;
+  left: 18px !important; */
+}
+
+#react-tabs-20{
+  padding: 8px 20px;
+  border: none !important;
+}
+
+
+.spectabs{
+  margin: 0px auto;
+}
+
+#react-tabs-20{
+      /* position: relative;
+    right: 30px; */
+      border: none !important;
 }

@@ -40,8 +40,8 @@ export default function tabLeft() {
                 </TabList>
 
                 <TabPanel>
-                <ApproachSection/>
-              
+                  <ApproachSection />
+                  <ApproachSection />
                 </TabPanel>
                 <TabPanel>
                   <h2>Type</h2>

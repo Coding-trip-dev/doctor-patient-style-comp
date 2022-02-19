@@ -8,6 +8,12 @@ const Approach = styled.div`
   font-family: GilroyRegular;
   /* background-color: gray;
   height: 500px; */
+  background-color: white;
+  box-shadow: 0px -1px 17px #e3e3e3;
+  border-radius: 12px;
+margin-bottom: 20px ;
+
+
 
   .onlineimg {
     position: relative;
@@ -47,6 +53,10 @@ export const CallPerson = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: inherit;
+
+  @media (max-width: 550px) {
+    width: 50%;
+  }
 `;
 
 export const StatusCell = styled.div`
@@ -67,18 +77,190 @@ export const VideoCell = styled.div`
    position: relative;
    top: -4px;
    left: 10px;
+
+   ${(props) =>
+     props.consultName &&
+     css`
+       font-size: 26px;
+       text-align: initial;
+       margin-bottom: unset;
+     `};
+   ${(props) =>
+     props.consultExperties &&
+     css`
+       font-size: 17px;
+       text-align: initial;
+     `};
+
+   ${(props) =>
+     props.consultDesc &&
+     css`
+       font-size: 16px;
+       font-family: "Quicksand", sans-serif;
+       text-align: initial;
+     `};
  `;
 
 
 
 
- export const Rating = styled.p`
+ export const Rating = styled.div`
    /* flex-direction: row; */
    align-items: baseline;
    justify-content: center;
    display: flex;
    flex-direction: row;
+   height: 25px;
  `;
 
+  export const FeeCharges = styled.div`
+    /* flex-direction: row; */
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 550px) {
+      width: 50%;
+    }
+  `;
+
+
+
+  export const DurationCharge = styled.div`
+    /* flex-direction: row; */
+
+    display: flex;
+    flex-direction: row;
+
+    .inptxt {
+      font-family: "Quicksand", sans-serif;
+      font-size: 15px;
+    }
+
+    .onlinetxt {
+          font-family: "Quicksand", sans-serif;
+      font-size: 15px;
+    }
+  `;
+
+
+  export const ConsultantWrapper = styled.div`
+    /* flex-direction: row; */
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 550px) {
+      flex-direction: row;
+    }
+  `;
+
+
+  export const Duration = styled.div`
+    /* flex-direction: row; */
+    border-right: 1px #73d0be solid;
+    width: 50%;
+  `;
+
+  
+  export const Fee = styled.div`
+    /* flex-direction: row; */
+
+    width: 50%;
+  `;
+    
+  export const Smtext = styled.p`
+    /* flex-direction: row; */
+    /* flex-direction: row; */
+    font-family: "Quicksand", sans-serif;
+    font-size: 11px;
+    color: #73d0be;
+    margin-bottom: unset !important;
+  `;
+    
+  export const Lgtext = styled.p`
+    font-family: "Quicksand", sans-serif;
+    font-size: 19px;
+    color: #121212;
+    margin-bottom: unset !important;
+  `;
+
+
+  export const Moretext = styled.span`
+    font-family: "Quicksand", sans-serif;
+    font-size: 13px;
+    background-color: #e6f5f4;
+    color: #5d638c;
+    padding: 2px 5px;
+    border-radius: 10px;
+  `;
+
+
+
+export const SpecialTreatmentTags = styled.div`
+  font-family: "Quicksand", sans-serif;
+  text-align: initial;
+
+`;
+
+export const Tag = styled.button`
+  font-family: "Quicksand", sans-serif;
+  background: #cceee8;
+  color: #52a091;
+  padding: 3px 7px;
+  border-radius: 14px;
+  margin-right: 8px;
+  display: inline;
+  cursor: default;
+  border: none;
+  margin-bottom: 10px;
+`;
+
+export const Connections = styled.div`
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px ;
+`;
+
+export const Talk = styled.div`
+  font-family: "Quicksand", sans-serif;
+  font-size: 19px;
+  background-color: #48d90b;
+  color: white;
+  padding: 1px 36px;
+  border-radius: 17px;
+
+  @media (max-width: 550px) {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+`;
+export const Profile = styled.div`
+  font-family: "Quicksand", sans-serif;
+  font-size: 19px;
+  background-color: #fa7268;
+  color: white;
+  padding: 1px 36px;
+  border-radius: 17px;
+  @media (max-width: 550px) {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+`;
+export const Quest = styled.div`
+  font-family: "Quicksand", sans-serif;
+  font-size: 19px;
+  background-color: #73d0be;
+  color: white;
+  padding: 1px 36px;
+  border-radius: 17px;
+  @media (max-width: 550px) {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+`;
+ 
 
 export default Approach;
