@@ -11,3 +11,132 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.colb{
+    color: #3a3a3a !important;
+}
+
+
+@font-face {
+font-family: "GilroyHeavy";
+src: url("./assets/fonts/Gilroy-Heavy.woff");
+/* font-weight: bold; */
+}
+
+@font-face {
+font-family: "GilroyLight";
+src: url("./assets/fonts/Gilroy-Light.woff");
+/* font-weight: bold; */
+}
+
+@font-face {
+font-family: "GilroyBold";
+src: url("./assets/fonts/Gilroy-Bold.woff");
+/* font-weight: bold; */
+}
+
+
+@font-face {
+font-family: "GilroyMedium";
+src: url("./assets/fonts/Gilroy-Medium.woff");
+/* font-weight: bold; */
+}
+
+
+@font-face {
+font-family: "GilroyRegular";
+src: url("./assets/fonts/Gilroy-Regular.woff");
+/* font-weight: bold; */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+.navbar-nav > a{
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+ .link{
+      color: #fff;
+      font-size: 18px;
+      margin: 0px 5px 0px 10px;
+      text-decoration: none;
+      position: relative;
+ }
+      .link:after {
+        bottom: -4px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        background: #fff;
+        opacity: 0.6;
+        transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+        width: 0;
+      }
+      .link:hover::after{
+        width: 100%;
+        opacity: 0.9;
+        
+ }
+     
+ #collasible-nav-dropdown{
+    color: #3a3a3a !important;
+ }
+
+ .dropdown-menu[data-bs-popper]{
+   left: -86px !important;
+ }
+
+ #collasible-nav-dropdown::before{
+  content:url('./assets/images icons/1x/united-kingdom.png'); 
+  position:relative; /*or absolute*/
+ 
+    top: 4px;
+}
+
+.dropdown-toggle:empty::after {
+    margin-left: 6px !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('./assets/images icons/1x/Component\ 2\ –\ 1.png') !important;
+}
+
+@media(max-width: 500px){
+  .mobimgset{
+    width: 100% !important;
+  }
+}
+
+
+.slick-initialized .slick-slide{
+  padding-top: 70px !important;
+}
+
+body{
+   background-color: #f9fefe !important;
+}
+
+.react-tabs__tab--selected{
+  background: #fc6459 !important;
+    color: white !important;
+    border-radius: 19px !important;
+}
+
+.react-tabs__tab{
+      background: #73D0BE;
+    color: white;
+    border-radius: 18px;
+    margin-right: 5px;
+    padding: 7px 12px;
+}
+
+.react-tabs__tab-list{
+  border-bottom: none !important;
+}
