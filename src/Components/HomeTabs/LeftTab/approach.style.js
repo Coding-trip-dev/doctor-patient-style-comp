@@ -8,13 +8,16 @@ const Approach = styled.div`
   font-family: GilroyRegular;
   /* background-color: gray;
   height: 500px; */
-  background-color: white;
-  box-shadow: 0px -1px 17px #e3e3e3;
-  border-radius: 12px;
-margin-bottom: 20px ;
+ 
+  /* margin-bottom: 20px; */
 
+  .setpad1 {
+    padding-top: 30px;
+  }
 
-
+  .setpad2 {
+    padding-top: 20px;
+  }
   .onlineimg {
     position: relative;
     top: 40px;
@@ -55,7 +58,7 @@ export const CallPerson = styled.div`
   background-size: inherit;
 
   @media (max-width: 550px) {
-    width: 50%;
+    /* width: 50%; */
   }
 `;
 
@@ -98,6 +101,42 @@ export const VideoCell = styled.div`
        font-size: 16px;
        font-family: "Quicksand", sans-serif;
        text-align: initial;
+       padding: 2px 10px;
+       @media (max-width: 550px) {
+         margin-top: -51px;
+       }
+     `};
+
+   ${(props) =>
+     props.onlyshowmob &&
+     css`
+       @media (min-width: 500px) {
+         display: none;
+       }
+     `};
+
+   ${(props) =>
+     props.mobstyle &&
+     css`
+       @media (max-width: 550px) {
+         font-size: 10px;
+         margin-top: 20px;
+       }
+     `};
+
+   ${(props) =>
+     props.mobstylehead &&
+     css`
+       @media (max-width: 550px) {
+         font-size: 16px;
+       }
+     `};
+   ${(props) =>
+     props.onlyWeb &&
+     css`
+       @media (max-width: 550px) {
+         display: none;
+       }
      `};
  `;
 
@@ -229,9 +268,10 @@ export const Talk = styled.div`
   font-size: 19px;
   background-color: #48d90b;
   color: white;
-  padding: 1px 36px;
+  padding: 1px 30px;
   border-radius: 17px;
-
+  font-weight: bold;
+  margin-right: 5px;
   @media (max-width: 550px) {
     font-size: 14px;
     padding: 5px 16px;
@@ -242,8 +282,9 @@ export const Profile = styled.div`
   font-size: 19px;
   background-color: #fa7268;
   color: white;
-  padding: 1px 36px;
+  padding: 1px 30px;
   border-radius: 17px;
+  margin-right: 5px;
   @media (max-width: 550px) {
     font-size: 14px;
     padding: 5px 16px;
@@ -254,13 +295,86 @@ export const Quest = styled.div`
   font-size: 19px;
   background-color: #73d0be;
   color: white;
-  padding: 1px 36px;
+  padding: 1px 30px;
+  margin-right: 5px;
   border-radius: 17px;
   @media (max-width: 550px) {
     font-size: 14px;
     padding: 5px 16px;
   }
 `;
- 
+ export const Switch = styled.div`
+   font-family: "Quicksand", sans-serif;
+   width: 100%;
+   border: 1px #73d0be solid;
+   width: 90%;
+   margin: 0px auto;
+   border-radius: 20px;
+   padding: 2px 1px;
+   @media (max-width: 550px) {
+     width: 100%;
+   }
+ `;
+
+  export const Inperson = styled.div`
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 3px;
+  `;
+
+    export const Online = styled.div`
+      width: 50%;
+      float: left;
+      background: #73d0be;
+      color: white;
+      border-radius: 14px;
+      padding: 3px 1px;
+    `;
+
+
+    export const Experience = styled.div`
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      @media (max-width: 550px) {
+        display: none;
+      }
+
+      ${(props) =>
+        props.onlyshowmob &&
+        css`
+          @media (max-width: 550px) {
+            display: flex;
+            padding: 15px 5px;
+          }
+          @media (min-width: 500px) {
+            display: none;
+          }
+        `};
+    `;
+    
+    export const ExpTag = styled.div`
+      width: 40%;
+      font-family: "Quicksand", sans-serif;
+      font-size: 14px;
+      background: aliceblue;
+      border-radius: 12px;
+      margin-right: 5px;
+      font-weight: bold;
+      color: #3a3a3a;
+      ${(props) =>
+        props.love &&
+        css`
+          width: 20%;
+          background: none;
+        `};
+    `;
+  export const CallPersonWrap = styled.div`
+    font-family: "Quicksand", sans-serif;
+    @media (max-width: 550px) {
+      width: 50%;
+    }
+  `;
 
 export default Approach;

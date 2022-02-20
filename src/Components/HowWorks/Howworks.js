@@ -22,6 +22,7 @@ const iconsty = {
 function HowItWorks() {
   var settings = {
     dots: true,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [

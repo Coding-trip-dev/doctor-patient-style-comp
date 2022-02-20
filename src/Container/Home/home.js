@@ -2,8 +2,13 @@ import React from 'react'
 
 import Navbar from './../../Components/Navbar/navbar';
 import HowWorks from "./../../Components/HowWorks/Howworks";
-import HomeTabsLeft from "./../../Components/HomeTabs/LeftTab/tabLeft";
+import DoctorSection from "./../../Components/HomeTabs/LeftTab/tabLeft";
 import HomeTabsRight from "./../../Components/HomeTabs/RightTab/tabRight";
+
+import zoomimg from "./../../assets/images icons/1x/zoom.png";
+import person from "./../../assets/images icons/1x/user (1).png";
+
+import doctorimg from "./../../assets/images icons/1x/Online Doctor-pana.png";
 
 
 import Row from "react-bootstrap/Row";
@@ -16,9 +21,24 @@ import img2 from "./../../assets/images icons/1x/Vector Smart Object.png";
 
 import vectorimg from "./../../assets/images icons/1x/Header.png";
 
+import FAQ from "./../../Components/FAQs/faq";
+import Footer from "./../../Components/Footer/footer";
 
 
-import ContactForm, { ConnenctButton, HrLine, Spacer, Therapist, Input,UpperDiv } from "./home.style";
+import ContactForm, {
+  ConnenctButton,
+  HrLine,
+  Spacer,
+  Therapist,
+  Input,
+  UpperDiv,
+  Switch,
+  Inperson,
+  Online,
+  DoctorQuote,
+  Head,
+  Para
+} from "./home.style";
 
 const vactorImg = {
   backgroundImage: `url(${vectorimg})`,
@@ -26,6 +46,8 @@ const vactorImg = {
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
 };
+
+
 
 export default function home() {
   return (
@@ -47,17 +69,18 @@ export default function home() {
               <ContactForm>
                 <p>Connect to Therapist</p>
                 <br />
-                <ConnenctButton>
-                  {" "}
-                  <img src={img1} /> In Person
-                </ConnenctButton>
-                <ConnenctButton online>
-                  {" "}
-                  <img src={img1} /> Online
-                </ConnenctButton>
+                <Switch>
+                  <Inperson>
+                    <img src={person} /> In Person
+                  </Inperson>
+                  <Online>
+                    <img src={zoomimg} /> Online
+                  </Online>
+                </Switch>
+
                 <Spacer />
                 <HrLine />
-                <Spacer />
+                <Spacer lesheight />
                 <UpperDiv>
                   <Therapist>Therapist Specialist</Therapist>
                 </UpperDiv>
@@ -85,31 +108,39 @@ export default function home() {
 
       <HowWorks />
       <Row>
-        <Col lg={8} md={8} sm={12}>
-          <HomeTabsLeft />
+        <Col lg={12} md={12} sm={12}>
+          <DoctorSection />
         </Col>
-        <Col lg={4} md={4} sm={12}>
-          <HomeTabsRight />
+      </Row>
+
+      <br />
+      <br />
+      <Row>
+        <Col lg={6} md={6} sm={12}>
+          <DoctorQuote>
+            <Head>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Head>
+            <Para>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui
+              mi, dapibus et ipsum vitae, sollicitudin finibus urna. Quisque
+              quis neque semper, finibus sapien vel, placerat arcu.{" "}
+            </Para>
+          </DoctorQuote>
+        </Col>
+        <Col lg={6} md={6} sm={12} style={{textAlign: 'initial'}}>
+          <img src={doctorimg} className="mobImg" />
         </Col>
       </Row>
       <br />
       <br />
+      <FAQ />
+
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer/>
+  
+     
     </div>
   );
 }

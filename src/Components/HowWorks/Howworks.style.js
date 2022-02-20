@@ -5,6 +5,10 @@ import styled, { css } from "styled-components";
  const HowWorks = styled.div`
    font-family: GilroyRegular;
    background-color: #f9fefe;
+
+   .slick-initialized .slick-slide {
+     padding-top: 70px !important;
+   }
  `;
 
 

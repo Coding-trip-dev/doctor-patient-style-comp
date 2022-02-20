@@ -121,6 +121,9 @@ src: url("./assets/fonts/Gilroy-Regular.woff");
 }
 
 @media(max-width: 500px){
+  .mobImg{
+    width: 100% !important;
+  }
   .mobimgset{
     width: 100% !important;
   }
@@ -131,9 +134,6 @@ src: url("./assets/fonts/Gilroy-Regular.woff");
 }
 
 
-.slick-initialized .slick-slide{
-  padding-top: 70px !important;
-}
 
 body{
    background-color: #f9fefe !important;
@@ -179,11 +179,22 @@ body{
 
 
 .spectabs{
-  margin: 0px auto;
+  /* margin: 0px auto; */
 }
 
 #react-tabs-20{
       /* position: relative;
     right: 30px; */
       border: none !important;
+}
+
+
+.accordion-button{
+  background-color: #73D0BE !important;
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after{
+      filter: brightness(0) invert(1) !important;
 }
