@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden !important;
 }
 
 code {
@@ -54,7 +56,7 @@ src: url("./assets/fonts/Gilroy-Regular.woff");
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .navbar-nav > a{
   font-family: 'Quicksand', sans-serif;
 }
@@ -121,6 +123,10 @@ src: url("./assets/fonts/Gilroy-Regular.woff");
 }
 
 @media(max-width: 500px){
+  
+.navbar-expand-lg .container{
+    flex-direction: row-reverse !important;
+}
   .mobImg{
     width: 100% !important;
   }
@@ -198,3 +204,5 @@ body{
 .accordion-button::after{
       filter: brightness(0) invert(1) !important;
 }
+
+

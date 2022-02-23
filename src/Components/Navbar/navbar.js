@@ -11,7 +11,7 @@ import Logo from "./../../assets/images icons/1x/Image 12.png";
 
 import countryLogo from "./../../assets/images icons/1x/united-kingdom.png";
 
-import NavbarWrapper, { Logotext } from "./navbar.style";
+import NavbarWrapper, { Logotext, Smlogotext } from "./navbar.style";
 // function classNames(...classes) {
 //   return classes.filter(Boolean).join(" ");
 // }
@@ -22,8 +22,9 @@ function App() {
       <Navbar collapseOnSelect expand="lg" className="bghead" variant="dark">
         <Container>
           <Navbar.Brand href="#home" className="logoheader">
-            <img style={{ display: "flex", alignItems: "center" }} src={Logo} />
-            <Logotext className="logoname"> &nbsp;&nbsp;&nbsp;Lorem</Logotext>
+            <img  className="logimg" src={Logo} />
+            <Logotext className="logoname"> &nbsp;Loreteav </Logotext>
+            <Smlogotext>Psikolog</Smlogotext>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

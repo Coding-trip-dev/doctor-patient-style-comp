@@ -27,6 +27,8 @@ import Footer from "./../../Components/Footer/footer";
 
 import ContactForm, {
   ConnenctButton,
+  MobNavbar,
+  Titles,
   HrLine,
   Spacer,
   Therapist,
@@ -37,7 +39,7 @@ import ContactForm, {
   Online,
   DoctorQuote,
   Head,
-  Para
+  Para,
 } from "./home.style";
 
 const vactorImg = {
@@ -50,6 +52,9 @@ const vactorImg = {
 
 
 export default function home() {
+
+
+
   return (
     <div>
       <Navbar />
@@ -67,7 +72,7 @@ export default function home() {
             </Col>
             <Col md={9} lg={9}>
               <ContactForm>
-                <p>Connect to Therapist</p>
+                <Titles>Connect to Therapist</Titles>
                 <br />
                 <Switch>
                   <Inperson>
@@ -107,6 +112,11 @@ export default function home() {
       </Row>
 
       <HowWorks />
+
+      <MobNavbar>
+        <Navbar />
+      </MobNavbar>
+
       <Row>
         <Col lg={12} md={12} sm={12}>
           <DoctorSection />
@@ -126,7 +136,7 @@ export default function home() {
             </Para>
           </DoctorQuote>
         </Col>
-        <Col lg={6} md={6} sm={12} style={{textAlign: 'initial'}}>
+        <Col lg={6} md={6} sm={12} style={{ textAlign: "initial" }}>
           <img src={doctorimg} className="mobImg" />
         </Col>
       </Row>
@@ -138,9 +148,7 @@ export default function home() {
       <br />
       <br />
       <br />
-      <Footer/>
-  
-     
+      <Footer />
     </div>
   );
 }

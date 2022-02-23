@@ -222,6 +222,9 @@ export const VideoCell = styled.div`
     font-size: 19px;
     color: #121212;
     margin-bottom: unset !important;
+    @media (max-width: 550px) {
+      font-size: 15px;
+    }
   `;
 
 
@@ -303,6 +306,7 @@ export const Quest = styled.div`
     padding: 5px 16px;
   }
 `;
+
  export const Switch = styled.div`
    font-family: "Quicksand", sans-serif;
    width: 100%;
@@ -321,6 +325,11 @@ export const Quest = styled.div`
     float: left;
     position: relative;
     top: 3px;
+
+    @media (max-width: 550px) {
+      font-size: 12px;
+      top: 5px;
+    }
   `;
 
     export const Online = styled.div`

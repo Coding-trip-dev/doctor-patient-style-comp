@@ -40,10 +40,11 @@ function HowItWorks() {
 
   return (
     <HowWorks className="container">
-      <Spacer />
-      <Heading>How It Work</Heading>
-
-  
+      {/* <Spacer /> */}
+      <Heading>Online Therapist</Heading>
+      <Heading fnt>How It Works?</Heading>
+       <hr className="hrline" />
+      <Heading>Get Connected with therapist in 3 steps</Heading>
 
       <Slider
         {...settings}

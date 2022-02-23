@@ -41,6 +41,12 @@ export const Form = styled.div`
     width: 392px;
     margin: 0px auto;
     border-radius: 14px;
+
+@media(max-width: 550px){
+  width: 100%;
+}
+
+
   .textfield {
     width: 250px;
     background: transparent;

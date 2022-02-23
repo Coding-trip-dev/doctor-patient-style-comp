@@ -47,6 +47,7 @@ export const Daytime = styled.div`
   color: #c2c3d0;
   margin: 5px auto;
   width: 75%;
+  
   ${(props) =>
     props.yes &&
     css`
@@ -61,6 +62,13 @@ export const Daytime = styled.div`
 export const CalenderWrapper = styled.div`
   font-family: "Quicksand", sans-serif;
   height: 100%;
+
+  .slidheight {
+    height: 75%;
+    @media (max-width: 550px) {
+      height: 60%;
+    }
+  }
 
   .slick-prev:before {
     /* background: #ddf4ef !important; */

@@ -17,8 +17,16 @@ export const ContactForm = styled.form`
     margin: 0px auto;
     border: none !important;
   }
+
+
+
 `;
 
+export const Titles = styled.form`
+  font-family: Poppins;
+  font-size: 20px;
+ font-weight: bold;
+`;
 
 export const ConnenctButton = styled.button`
   background-color: white;
@@ -51,7 +59,11 @@ export const ConnenctButton = styled.button`
       background-color: #73d0be;
       color: white;
       margin-top: 15px;
-      width: 85%;
+      width: 88%;
+      @media (max-width: 550px) {
+        width: 55% !important;
+        font-size: 17px;
+      }
       &:hover {
         background-color: white;
         color: #73d0be;
@@ -79,9 +91,11 @@ export const Spacer = styled.div`
 
 
 export const Therapist = styled.label`
-  font-family: GilroyRegular;
-  font-size: 17.1px;
+  font-family: Poppins;
+  font-size: 15px;
 `;
+
+
 
 export const Input = styled.input`
   font-size: 18px;
@@ -89,7 +103,7 @@ export const Input = styled.input`
   margin: 10px;
   width: 85%;
   margin: 0px auto;
-  border: 1px #a5a5a5 solid;
+  border: 1px #cccccc solid;
   border-radius: 29px;
   display: block;
   ::placeholder {
@@ -102,7 +116,7 @@ export const Input = styled.input`
 
 export const UpperDiv = styled.div`
   text-align: initial;
-  width: 76%;
+  width: 90%;
   margin: 0px auto;
 
 
@@ -122,32 +136,38 @@ export const Content = styled.div`
    margin: 0px auto;
    border-radius: 25px;
    padding: 2px 1px;
-   height: 52px;
+   height: 46px;
    @media (max-width: 550px) {
      width: 100%;
    }
  `;
 
  export const Inperson = styled.div`
-   width: 50%;
+   width: 40%;
    float: left;
-   font-size: 20px;
+   font-size: 15px;
    position: relative;
-   top: 7px;
+   top: 10px;
    color: #121212;
+   font-family: Poppins;
+   font-weight: bold;
+   letter-spacing: 0.5px;
  `;
 
  export const Online = styled.div`
-   width: 50%;
+   width: 60%;
    float: left;
    background: #73d0be;
    color: white;
    border-radius: 27px;
    padding: 8px 1px;
-   font-size: 20px;
+       letter-spacing: 0.5px;
+   font-size: 15px;
    position: relative;
    top: 0px;
    right: 2px;
+   font-family: Poppins;
+   font-weight: bold;
  `;
 
 
@@ -181,5 +201,14 @@ export const Content = styled.div`
       padding: 20px;
     }
   `;
+
+
+  export const MobNavbar = styled.p`
+    font-family: "Quicksand", sans-serif;
+    @media (min-width: 500px) {
+     display: none;
+    }
+  `;
+  
 
 export default ContactForm;

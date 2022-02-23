@@ -30,7 +30,7 @@ export default function calender() {
 
   return (
     <CalenderWrapper>
-      <Slider {...settings} style={{ height: "75%" }}>
+      <Slider {...settings}  className="slidheight"> 
         <Calender>
           <Day mrlft>
             <Dayname>Monday</Dayname>
