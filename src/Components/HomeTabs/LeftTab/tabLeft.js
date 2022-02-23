@@ -22,6 +22,7 @@ export default function tabLeft() {
     paddingTop: '12px',
  }
 
+ 
   return (
     <>
       <Spacer />
