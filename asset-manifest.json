@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/doctor-patient-style-comp/static/css/main.18621dc9.css",
-    "main.js": "/doctor-patient-style-comp/static/js/main.58726be5.js",
+    "main.js": "/doctor-patient-style-comp/static/js/main.b9fa5903.js",
     "static/js/787.28cb0dcd.chunk.js": "/doctor-patient-style-comp/static/js/787.28cb0dcd.chunk.js",
     "static/media/Online Doctor-pana.png": "/doctor-patient-style-comp/static/media/Online Doctor-pana.b60a3df42531584bd20a.png",
     "static/media/Gilroy-Medium.woff": "/doctor-patient-style-comp/static/media/Gilroy-Medium.3a98bbb5a6e14bbe2c27.woff",
@@ -20,11 +20,11 @@
     "static/media/slick.woff": "/doctor-patient-style-comp/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/doctor-patient-style-comp/index.html",
     "main.18621dc9.css.map": "/doctor-patient-style-comp/static/css/main.18621dc9.css.map",
-    "main.58726be5.js.map": "/doctor-patient-style-comp/static/js/main.58726be5.js.map",
+    "main.b9fa5903.js.map": "/doctor-patient-style-comp/static/js/main.b9fa5903.js.map",
     "787.28cb0dcd.chunk.js.map": "/doctor-patient-style-comp/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18621dc9.css",
-    "static/js/main.58726be5.js"
+    "static/js/main.b9fa5903.js"
   ]
 }
