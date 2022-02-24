@@ -24,23 +24,23 @@ function App() {
           <Navbar.Brand href="#home" className="logoheader">
             <img  className="logimg" src={Logo} />
             <Logotext className="logoname"> &nbsp;Loreteav </Logotext>
-            <Smlogotext>Psikolog</Smlogotext>
+            {/* <Smlogotext>Psikolog</Smlogotext> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
               <Nav.Link href="#features" className="link colb">
-                For Consultant
+                HomePage
               </Nav.Link>
               <Nav.Link href="#pricing" className="link colb">
-                For Users
+                For Experts
               </Nav.Link>
               <Nav.Link href="#features" className="link colb">
                 FAQ
               </Nav.Link>
               <Nav.Link href="#pricing" className="link colb">
-                Blog
+                Questions
               </Nav.Link>
 
               <Nav.Link href="#pricing" className="signupbtn link colb">
@@ -54,7 +54,7 @@ function App() {
                 Login
               </Nav.Link>
 
-              <NavDropdown
+              {/* <NavDropdown
                 title=""
                 id="collasible-nav-dropdown"
                 className="colb"
@@ -71,7 +71,7 @@ function App() {
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

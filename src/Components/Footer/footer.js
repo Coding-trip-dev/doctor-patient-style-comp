@@ -48,8 +48,8 @@ const vactorImg2 = {
         <Row>
           <Col md={4} lg={4} sm={12} >
             <DoctorQuote>
-              <Head>Lorem</Head>
-              <Para>
+              <Head >Lorem</Head>
+              <Para >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 dui mi, dapibus et ipsum vitae, sollicitudin finibus urna.
                 Quisque quis neque semper, finibus sapien vel, placerat arcu.{" "}
@@ -57,32 +57,32 @@ const vactorImg2 = {
             </DoctorQuote>
           </Col>
           <Col md={2} lg={2} sm={12}>
-            <Head normal>Lorem</Head>
-            <Para>For Consultants</Para>
-            <Para>Find Consultant</Para>
-            <Para>FAQ</Para>
-            <Para>Question</Para>
+            <Head normal noPad>Lorem</Head>
+            <Para noPad>For Consultants</Para>
+            <Para noPad>Find Consultant</Para>
+            <Para noPad>FAQ</Para>
+            <Para noPad>Question</Para>
           </Col>
           <Col md={2} lg={2} sm={12}>
-            <Head normal>Legal</Head>
-            <Para>Imprint</Para>
-            <Para>Cookies</Para>
-            <Para>Security</Para>
-            <Para>Privacy policy</Para>
-            <Para>Terms of use </Para>
-            <Para>Cookies</Para>
+            <Head normal noPad>Legal</Head>
+            <Para noPad>Imprint</Para>
+            <Para noPad>Cookies</Para>
+            <Para noPad>Security</Para>
+            <Para noPad>Privacy policy</Para>
+            <Para noPad>Terms of use </Para>
+            <Para noPad>Cookies</Para>
           </Col>
           <Col md={4} lg={4} sm={12} >
             <ContactWrap>
               <Wrap>
-                <Head normal>Contact Us</Head>
-                <Para>info@lorem.com</Para>
-                <Head normal>Follow Us</Head>
+                <Head normal noPad>Contact Us</Head>
+                <Para noPad>info@lorem.com</Para>
+                <Head normal noPad>Follow Us</Head>
                 <AiOutlineInstagram size={50} />
               </Wrap>
-              <Wrap>
-                <Head normal>Lorem</Head>
-                <Para>lorem@lorem.com</Para>
+              <Wrap ml_10>
+                <Head normal noPad>Lorem</Head>
+                <Para noPad>lorem@lorem.com</Para>
               </Wrap>
             </ContactWrap>
 

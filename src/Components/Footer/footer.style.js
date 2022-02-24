@@ -30,54 +30,67 @@ export const FooterMain = styled.div`
 `;
 
 
- export const DoctorQuote = styled.div`
+export const DoctorQuote = styled.div`
    display: flex;
    flex-direction: column;
    height: 100%;
    align-items: center;
  `;
- export const Head = styled.p`
+export const Head = styled.p`
    font-size: 26px;
    font-family: "Quicksand", sans-serif;
    color: #121212;
    text-align: initial;
-   padding: 10px 50px;
+   ${(props) =>
+    props.noPad ?
+      css`padding:10px 0px;`
+      :
+      css`padding: 10px 50px;`}
    @media (max-width: 550px) {
      padding: 20px;
    }
    ${(props) =>
-     props.normal &&
-     css`
+    props.normal &&
+    css`
        font-size: 18px ;
      `};
  `;
 
- export const Para = styled.p`
+export const Para = styled.p`
    color: #828485;
    font-size: 18px;
    font-family: "Quicksand", sans-serif;
    text-align: initial;
-   padding: 0px 20px;
+   ${(props) =>
+    props.noPad ?
+      css`padding:0px;`
+      :
+      css`padding: 0px 20px;`};
+   
    margin-bottom: 0.5rem;
    @media (max-width: 550px) {
      padding: 20px;
    }
  `;
 
- export const ContactWrap = styled.div`
+export const ContactWrap = styled.div`
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
+
  `;
 
-  export const Wrap = styled.div`
-  
+export const Wrap = styled.div`
+   text-align: left;
+   ${(props) =>
+    props.ml_10 &&
+      css`margin-left:40px;`
+       };
   `;
- export const ButtonMain = styled.div`
+export const ButtonMain = styled.div`
   display: flex;
   flex-direction: row;
   `;
-   export const Footerbutton = styled.button`
+export const Footerbutton = styled.button`
      background: none;
      border: none;
    `;
